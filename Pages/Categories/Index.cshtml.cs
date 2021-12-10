@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Oprea_Oana_lab8.Data;
 using Oprea_Oana_lab8.Models;
 
-namespace Oprea_Oana_lab8.Pages.Publishers
+namespace Oprea_Oana_lab8.Pages.Categories
 {
     public class IndexModel : PageModel
     {
@@ -19,12 +19,11 @@ namespace Oprea_Oana_lab8.Pages.Publishers
             _context = context;
         }
 
-        public IList<Publisher> Publisher { get;set; }
+        public IList<Category> Category { get;set; }
 
         public async Task OnGetAsync()
         {
-            Publisher = await _context.Publisher
-            .ToListAsync();
+            Category = await _context.Category.ToListAsync();
         }
     }
 }

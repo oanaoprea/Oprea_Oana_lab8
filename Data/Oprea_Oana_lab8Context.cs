@@ -17,5 +17,7 @@ namespace Oprea_Oana_lab8.Data
         public DbSet<Oprea_Oana_lab8.Models.Book> Book { get; set; }
 
         public DbSet<Oprea_Oana_lab8.Models.Publisher> Publisher { get; set; }
+
+        public DbSet<Oprea_Oana_lab8.Models.Category> Category { get; set; }
     }
 }
